@@ -11,9 +11,9 @@ st.write("0 = setosa, 1 = versicolor, 2 = virginica")
 
 #@st.cache_resource
 def cargar_modelos():
-    knn = joblib.load("modelo_iris_knn.joblib")
-    arbol = joblib.load("modelo_iris_knn.joblib")
-    svm = joblib.load("modelo_iris_knn.joblib")
+    knn = joblib.load("./modelo_iris_knn.pkl")
+    arbol = joblib.load("./modelo_iris_knn.pkl")
+    svm = joblib.load("./modelo_iris_knn.pkl")
     return knn, arbol, svm
 
 knn_model, arbol_model, svm_model = cargar_modelos()
