@@ -1,34 +1,21 @@
 import streamlit as st
 import joblib
 
-iris_target_names = {
-    0: "Setosa",
-    1: "Versicolor",
-    2: "Virginica"
-}
+############################# Barra Lateral##############################    
+
+st.sidebar.image("imagenes/logo_isil_principal.jpg", caption="Aplicación de Modelo de Clasificación desplegado en Streamlit")
 
 #############################Pagina 1##############################    
 
 def page1():
-    # ============================
-    # Cargar modelos Iris
-    # ============================
-    knn_model = joblib.load('./model/modelo_iris_knn.pkl')
-    svm_model = joblib.load('./model/modelo_iris_svm.pkl')
-    tree_model = joblib.load('./model/modelo_iris_arbol.pkl')
-    
-    # ============================
-    # Interfaz
-    # ============================
-    st.title("Predicción del dataset Iris")
+    st.header('Predicción del dataset Iris 🍀', divider='rainbow')
+    #st.title("Predicción del dataset Iris")
     
     st.info("Dr. Jesus Alvarado Huayhuaz")
     
     st.image("imagenes/iris_dataset.png",
                      caption="Dataset Iris")
     
-    st.sidebar.image("imagenes/logo_isil_principal.jpg",
-                     caption="Aplicación de Modelo de Clasificación desplegado en Streamlit")
     
     st.write("""
     El dataset Iris es uno de los conjuntos de datos más conocidos y utilizados en estadística, reconocimiento de patrones e inteligencia artificial. Fue introducido por el botánico y estadístico Ronald A. Fisher en 1936, en su artículo “The Use of Multiple Measurements in Taxonomic Problems”. Su objetivo original era demostrar el uso del análisis discriminante para clasificar especies de plantas a partir de mediciones morfológicas.
@@ -68,7 +55,25 @@ def page1():
 #############################Pagina 2##############################    
 
 def page2():
+    st.header('Predicción del dataset Iris 🍀', divider='rainbow')
+    #st.title("Predicción del dataset Iris")
+    st.info("Dr. Jesus Alvarado Huayhuaz")
+    
     st.write("Ingresa las características de la flor:")
+
+    iris_target_names = {
+        0: "Setosa",
+        1: "Versicolor",
+        2: "Virginica"
+    }
+    
+    # ============================
+    # Cargar modelos Iris
+    # ============================
+    
+    knn_model = joblib.load('./model/modelo_iris_knn.pkl')
+    svm_model = joblib.load('./model/modelo_iris_svm.pkl')
+    tree_model = joblib.load('./model/modelo_iris_arbol.pkl')
     
     # Campos de entrada numéricos
     sepal_length = st.number_input('sepal length (cm)', min_value=0.0, max_value=10.0, step=0.1)
@@ -116,6 +121,9 @@ def page2():
 #############################Pagina 3##############################    
 
 def page3():
+    st.header('Predicción del dataset Iris 🍀') #, divider='rainbow')   
+    st.info("Dr. Jesus Alvarado Huayhuaz")
+    
     st.write("""
     1. KNN
     2. SVM
