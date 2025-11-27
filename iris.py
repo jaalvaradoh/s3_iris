@@ -59,7 +59,7 @@ def page2():
     
     st.info("Dr. Jesus Alvarado Huayhuaz")
     
-    st.image("imagenes/iris_dataset.png", caption="Dataset Iris", height=400)
+    st.image("imagenes/iris_dataset.png", caption="Dataset Iris")
     
     st.write("Ingresa las características de la flor:")
 
