@@ -125,18 +125,21 @@ def page3():
     st.info("Dr. Jesus Alvarado Huayhuaz")
     
     st.write("""
-    1. KNN
-    2. SVM
-    3. Árbol de decisión
-    4. Joblib
-    5. Sklearn
-    6. IRIS
-    """)
 
-    pdf_url = "https://raw.githubusercontent.com/jaalvaradoh/s3_iris/main/pdf/Guia_Modelo_Clasificacion_Iris_Colab.docx.pdf"
-    st.pdf(pdf_url) #, height=600)
+    1. KNN (K-Nearest Neighbors): Algoritmo de clasificación que predice la clase de un punto según las clases de sus vecinos más cercanos.
     
-    #https://consultalinux.streamlit.app/
+    2. SVM (Support Vector Machine): Clasificador que busca un hiperplano óptimo que separe las clases con el mayor margen posible.
+    
+    3. Árbol de decisión: Modelo que clasifica datos mediante una estructura de nodos y ramas basados en preguntas sobre las características.
+    
+    4. Joblib: Librería de Python para guardar y cargar objetos de manera eficiente, como modelos entrenados.
+    
+    5. Sklearn (scikit-learn): Biblioteca de Python para machine learning, que incluye algoritmos, métricas y utilidades de preprocesamiento.
+    
+    6. IRIS: Dataset clásico de flores de iris usado para clasificación, con 150 muestras y 4 características (sépalos y pétalos) de 3 especies.
+
+    """)
+    
 ################################################################### 
 ##########################Configuracion############################    
 ################################################################### 
