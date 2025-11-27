@@ -146,7 +146,7 @@ def page3():
 page_names_to_funcs = {
   "El dataset": page1,
   "Predicciones": page2,
-  "Do it yourself": page3,
+  "Glosario": page3,
 }
 
 selected_page = st.sidebar.selectbox("Selecciona", page_names_to_funcs.keys())
