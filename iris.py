@@ -133,7 +133,7 @@ def page3():
     6. IRIS
     """)
 
-    pdf_url = "https://raw.githubusercontent.com/jaalvaradoh/s3_iris/main/Guia_Modelo_Clasificacion_Iris_Colab.docx.pdf"
+    pdf_url = "https://raw.githubusercontent.com/jaalvaradoh/s3_iris/main/pdf/Guia_Modelo_Clasificacion_Iris_Colab.docx.pdf"
     st.pdf(pdf_url, height=600)
     #https://consultalinux.streamlit.app/
 
