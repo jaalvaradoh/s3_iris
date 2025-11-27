@@ -3,19 +3,14 @@ import joblib
 
 ############################# Barra Lateral##############################    
 
-st.sidebar.image("imagenes/logo_isil_principal.jpg", caption="Aplicación de Modelo de Clasificación desplegado en Streamlit")
+st.sidebar.image("imagenes/logo_isil_principal.jpg", caption="Aplicación de Modelo de Clasificación | Despliegue en Streamlit")
 
 #############################Pagina 1##############################    
 
 def page1():
     st.header('Predicción del dataset Iris 🍀', divider='rainbow')
-    #st.title("Predicción del dataset Iris")
     
-    st.info("Dr. Jesus Alvarado Huayhuaz")
-    
-    st.image("imagenes/iris_dataset.png",
-                     caption="Dataset Iris")
-    
+    st.info("Dr. Jesus Alvarado Huayhuaz") 
     
     st.write("""
     El dataset Iris es uno de los conjuntos de datos más conocidos y utilizados en estadística, reconocimiento de patrones e inteligencia artificial. Fue introducido por el botánico y estadístico Ronald A. Fisher en 1936, en su artículo “The Use of Multiple Measurements in Taxonomic Problems”. Su objetivo original era demostrar el uso del análisis discriminante para clasificar especies de plantas a partir de mediciones morfológicas.
@@ -27,7 +22,12 @@ def page1():
     - Iris versicolor
     
     - Iris virginica
+    """ )
     
+    st.image("imagenes/iris_dataset.png",
+                     caption="Dataset Iris")
+    
+    st.write("""
     Para cada flor se registraron cuatro características morfométricas, medidas en centímetros:
     
     - Longitud del sépalo (sepal length)
