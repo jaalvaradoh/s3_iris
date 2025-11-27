@@ -121,7 +121,7 @@ def page2():
 #############################Pagina 3##############################    
 
 def page3():
-    st.header('Do It Yourself 🍀')    
+    st.header('Glosario 🍀')    
     st.info("Dr. Jesus Alvarado Huayhuaz")
     
     st.write("""
@@ -134,9 +134,9 @@ def page3():
     """)
 
     pdf_url = "https://raw.githubusercontent.com/jaalvaradoh/s3_iris/main/pdf/Guia_Modelo_Clasificacion_Iris_Colab.docx.pdf"
-    st.pdf(pdf_url, height=600)
+    st.pdf(pdf_url) #, height=600)
+    
     #https://consultalinux.streamlit.app/
-
 ################################################################### 
 ##########################Configuracion############################    
 ################################################################### 
