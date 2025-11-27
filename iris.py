@@ -122,7 +122,6 @@ def page2():
 
 def page3():
     st.header('Glosario 🍀')    
-    st.info("Dr. Jesus Alvarado Huayhuaz")
     
     st.write("""
 
