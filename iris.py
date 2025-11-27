@@ -24,7 +24,7 @@ st.info("Dr. Jesus Alvarado Huayhuaz")
 st.image("imagenes/iris_dataset.png",
                  caption="Dataset Iris")
 
-st.image("imagenes/logo_isil_principal.jpg",
+st.sidebar.image("imagenes/logo_isil_principal.jpg",
                  caption="Aplicación de Modelo de Clasificación desplegado en Streamlit")
 
 st.write("""
