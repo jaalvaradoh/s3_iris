@@ -56,8 +56,10 @@ def page1():
 
 def page2():
     st.header('Predicción del dataset Iris 🍀', divider='rainbow')
-    #st.title("Predicción del dataset Iris")
+    
     st.info("Dr. Jesus Alvarado Huayhuaz")
+    
+    st.image("imagenes/iris_dataset.png", caption="Dataset Iris", height=400)
     
     st.write("Ingresa las características de la flor:")
 
@@ -76,10 +78,10 @@ def page2():
     tree_model = joblib.load('./model/modelo_iris_arbol.pkl')
     
     # Campos de entrada numéricos
-    sepal_length = st.number_input('sepal length (cm)', min_value=0.0, max_value=10.0, step=0.1)
-    sepal_width = st.number_input('sepal width (cm)', min_value=0.0, max_value=10.0, step=0.1)
-    petal_length = st.number_input('petal length (cm)', min_value=0.0, max_value=10.0, step=0.1)
-    petal_width = st.number_input('petal width (cm)', min_value=0.0, max_value=10.0, step=0.1)
+    sepal_length = st.number_input('sepal length (cm)', min_value=0.0, max_value=10.0, step=0.1, value=5.9)
+    sepal_width = st.number_input('sepal width (cm)', min_value=0.0, max_value=10.0, step=0.1, value=3.0)
+    petal_length = st.number_input('petal length (cm)', min_value=0.0, max_value=10.0, step=0.1, value=5.0)
+    petal_width = st.number_input('petal width (cm)', min_value=0.0, max_value=10.0, step=0.1, value=1.8)
     
     # Selección de modelos
     st.write("Selecciona los modelos que deseas usar para la predicción:")
