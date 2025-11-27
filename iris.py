@@ -1,6 +1,12 @@
 import streamlit as st
 import joblib
 
+iris_target_names = {
+    0: "Setosa",
+    1: "Versicolor",
+    2: "Virginica"
+}
+
 # ============================
 # Cargar modelos Iris
 # ============================
@@ -38,14 +44,19 @@ if st.button("Predecir"):
         # KNN
         if use_knn:
             pred_knn = knn_model.predict(features)[0]
-            st.write(f"**KNN Predicción:** {pred_knn}")
+            #st.write(f"**KNN Predicción:** {pred_knn}")
+            st.write(f"**KNN Predicción:** {pred_knn} ({iris_target_names[pred_knn]})")
+
 
         # SVM
         if use_svm:
             pred_svm = svm_model.predict(features)[0]
-            st.write(f"**SVM Predicción:** {pred_svm}")
+            #st.write(f"**SVM Predicción:** {pred_svm}")
+            st.write(f"**SVM Predicción:** {pred_svm} ({iris_target_names[pred_svm]})")
+
 
         # Árbol de decisión
         if use_tree:
             pred_tree = tree_model.predict(features)[0]
-            st.write(f"**Árbol de Decisión Predicción:** {pred_tree}")
+            #st.write(f"**Árbol de Decisión Predicción:** {pred_tree}")
+            st.write(f"**Árbol de Decisión Predicción:** {pred_tree} ({iris_target_names[pred_tree]})")
