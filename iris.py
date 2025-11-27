@@ -121,7 +121,7 @@ def page2():
 #############################Pagina 3##############################    
 
 def page3():
-    st.header('Predicción del dataset Iris 🍀') #, divider='rainbow')   
+    st.header('Do It Yourself 🍀')    
     st.info("Dr. Jesus Alvarado Huayhuaz")
     
     st.write("""
@@ -133,6 +133,10 @@ def page3():
     6. IRIS
     """)
 
+    pdf_url = "https://raw.githubusercontent.com/jaalvaradoh/s3_iris/main/Guia_Modelo_Clasificacion_Iris_Colab.docx.pdf"
+    st.pdf(pdf_url, height=600)
+    #https://consultalinux.streamlit.app/
+
 ################################################################### 
 ##########################Configuracion############################    
 ################################################################### 
@@ -140,7 +144,7 @@ def page3():
 page_names_to_funcs = {
   "El dataset": page1,
   "Predicciones": page2,
-  "Glosario": page3,
+  "Do it yourself": page3,
 }
 
 selected_page = st.sidebar.selectbox("Selecciona", page_names_to_funcs.keys())
